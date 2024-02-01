@@ -1,10 +1,10 @@
-Title:
-Implement depth first search algorithm and Breadth First Search algorithm, Use an undirected
-graph and develop a recursive algorithm for searching all the vertices of a graph or tree data
-structure.
+# Title:
+# Implement depth first search algorithm and Breadth First Search algorithm, Use an undirected
+# graph and develop a recursive algorithm for searching all the vertices of a graph or tree data
+# structure.
 
 
-1].BFS
+# 1].BFS
 
 graph = {
   '5' : ['3','7'],
@@ -38,7 +38,7 @@ comp@comp-HP-EliteDesk-800-G1-SFF:~$ python3 bfs.py
 Following is the Breadth-First Search
 5 3 7 2 4 8
 
-2].DFS
+# 2].DFS
 
 graph = {
   '5' : ['3','7'],
@@ -58,14 +58,14 @@ def dfs(visited, graph, node):  #function for dfs
 print("Following is the Depth-First Search")
 dfs(visited, graph, '5')
 
-Output:
+# Output:
 
-comp@comp-HP-EliteDesk-800-G1-SFF:~$ python3 dfs.py
-Following is the Depth-First Search
-5
-3
-2
-4
-8
-7
+# comp@comp-HP-EliteDesk-800-G1-SFF:~$ python3 dfs.py
+# Following is the Depth-First Search
+# 5
+# 3
+# 2
+# 4
+# 8
+# 7
 
