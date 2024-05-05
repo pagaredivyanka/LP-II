@@ -1,6 +1,3 @@
-Name – Yash Shantaram Shirude
-Roll no – 43
-
 Title: Implement A star Algorithm for any game search problem.
 
 import java.util.*;
