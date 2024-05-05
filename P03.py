@@ -1,35 +1,14 @@
-def selection_sort(arr):
- s
-   n = len(arr)
+num = int(input("how many no you want to enter: "))
+l1 = [int(input("enter no. :")) for x in range (num)]
+print ("unsorted list",l1)
 
-   
-    for i in range(n):
+for i in range(len(l1)-1):
+    m_ind = i
+    for j in range(i+1,len(l1)):
+        if l1[j] < l1[m_ind] :
+            m_ind = j
+            
+    if l1[i] != l1[m_ind]:
+        l1[i],l1[m_ind] = l1[m_ind],l1[i]
 
-        # Initially assume the ith element is the smallest
-
-        min_index = i
-
-
-        # Find element smaller than current minimum 
-
-        for j in range(i+1, n):
- 
-           if arr[j] < arr[min_index]:
-
-                min_index = j
-     
-   
-        # Swap the smallest element to current i index
- 
-       arr[i], arr[min_index] = arr[min_index], arr[i]
-
-
-    return arr
-
-
-arr = [20,12,50,45,10]
-
-
-sorted_arr = selection_sort(arr)
-
-print(sorted_arr)
+print ("sorted list :",l1)
